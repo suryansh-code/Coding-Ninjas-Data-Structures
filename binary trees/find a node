@@ -2,12 +2,13 @@ Given a Binary Tree and an integer x, check if node with data x is present in th
 
 
 bool isNodePresent(BinaryTreeNode<int>* root, int x) {
+
+bool ans=false;
     
    
   if(root->data==x)
       ans =true;
     
-    bool ans=false;
    if(root->left) 
    {  bool leftans= isNodePresent(root->left,x);
       if(leftans)
